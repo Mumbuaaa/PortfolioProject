@@ -4,19 +4,20 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
-hmtl{
+html{
     scroll-behavior: smooth;
 }
 body {
-    background: #080808;
+    background: white;
     color: white;
 }
 #header {
     width: 100%;
     height: 100vh;
-    background-image: url(Images/background.png);
+    background-color: white;
     background-size: cover ;
     background-position: center;
+    color: black;
 }
 .container {
     padding : 10px 10;
@@ -27,20 +28,18 @@ nav{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    background-color: white;
+    color: black;
 
 }
 
-.logo{
-    width: 140px;
-
-}
 nav ul li {
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
 }
 nav ul li a{
-    color: white;
+    color: black;
     text-decoration: none;
     font-size: 18px;
     position: relative;
@@ -51,7 +50,8 @@ nav ul li a::after{
     content: '';
     width: 0;
     height:3px;
-    background: #ff004f;
+    background: white;
+    color: black;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -63,22 +63,23 @@ nav ul li a :hover::after{
     background: #ff004f;
 }
 .header-text{
-    margin-top: 20%;
+    margin-top: 20px;
     font-size: 30px;
+    text-align: center;
 
 }
-.header-text h1{
-    font-size: 60px;
-    margin-top: 20px;
+.header-text h2{
+    font-size: 40px;
+    margin-top: 5px;
 }
-.header-text h1 span{
+.header-text h2 span{
     color: #ff004f;
 }
 
 /*About*/
 #about{
     padding: 80px;
-    color: #ababab;
+    color: black;
 
 }
 .row{
@@ -148,6 +149,9 @@ nav ul li a :hover::after{
     padding: 30px 0;
 
 }
+.sub-title{
+    color: black;
+}
 .services-list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -155,7 +159,7 @@ nav ul li a :hover::after{
     margin-top: 50px;
 }
 .services-list div{
-    background: #262626;
+    background: white;
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
@@ -258,7 +262,7 @@ nav ul li a :hover::after{
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
-    color: #fff;
+    color: black;
     transition: background 0.5s;
 }
 .btn:hover{
@@ -271,13 +275,15 @@ nav ul li a :hover::after{
 }
 .contact-right{
     flex-basis: 60;
+    border: 0.5px solid black;
+    padding: 20px;
 }
 .contact-left p{
     margin-top: 30px;
 }
 .contact-left p i{
     color:#ff004f;
-    margin-right: 15px;
+    margin-right: -10px;
     font-size: 25px;
 
 }
@@ -303,16 +309,18 @@ nav ul li a :hover::after{
 }
 .contact-right form{
     width: 100%;
-
+    
 }
+
 form input, form textarea{
     width: 100%;
     border: 0;
     outline: none;
-    background: #262626;
+    border: 0.5px solid black;
     margin: 15px ;
     font-size: 18px;
     border-radius: 6px;
+    
 }
 form btn2{
     padding: 14px 60px;
@@ -324,13 +332,11 @@ form btn2{
     width: 100%;
     text-align: center;
     padding: 25px 0;
-    background:#262626 ;
+    background:white ;
     font-weight: 300;
     margin-top: 20px;
 }
-.copyright i{
-    color: #ff004f;
-}
+
 nav .fas{
     display:none;
 }
@@ -338,7 +344,8 @@ nav .fas{
 /*Small Screens*/
 @media only screen and (max-width: 600px){
     #header {
-        background-image: url(Images/phone-background.png);
+        background-image: url(Images/Profile.jpg);
+        width: auto;
 
     }
     .header-text{
